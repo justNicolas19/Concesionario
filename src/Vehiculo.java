@@ -1,69 +1,76 @@
-public class Vehiculo {
-    protected String Placa;
-    protected String Marca;
-    protected String Modelo;
-    protected String Anyo;
-    protected String PrecioBase;
+public abstract class Vehiculo {
+    protected String placa;
+    protected String marca;
+    protected String modelo;
+    protected int anio;
+    protected double precioBase;
 
     public Vehiculo() {
     }
 
-    public Vehiculo(String placa, String marca, String modelo, String anyo, String precioBase) {
-        Placa = placa;
-        Marca = marca;
-        Modelo = modelo;
-        Anyo = anyo;
-        PrecioBase = precioBase;
+    public Vehiculo(String placa, String marca, String modelo, int anio, double precioBase) {
+        this.placa = placa;
+        this.marca = marca;
+        this.modelo = modelo;
+        this.anio = anio;
+        this.precioBase = precioBase;
     }
 
     public String getPlaca() {
-        return Placa;
+        return placa;
     }
 
     public void setPlaca(String placa) {
-        Placa = placa;
+        this.placa = placa;
     }
 
     public String getMarca() {
-        return Marca;
+        return marca;
     }
 
     public void setMarca(String marca) {
-        Marca = marca;
+        this.marca = marca;
     }
 
     public String getModelo() {
-        return Modelo;
+        return modelo;
     }
 
     public void setModelo(String modelo) {
-        Modelo = modelo;
+        this.modelo = modelo;
     }
 
-    public String getAnyo() {
-        return Anyo;
+    public int getAnio() {
+        return anio;
     }
 
-    public void setAnyo(String anyo) {
-        Anyo = anyo;
+    public void setAnio(int anio) {
+        this.anio = anio;
     }
 
-    public String getPrecioBase() {
-        return PrecioBase;
+    public double getPrecioBase() {
+        return precioBase;
     }
 
-    public void setPrecioBase(String precioBase) {
-        PrecioBase = precioBase;
+    public void setPrecioBase(double precioBase) {
+        this.precioBase = precioBase;
+    }
+
+    public abstract double calcularPrecioFinal();
+
+    public String mostrarFicha() {
+
+        return "";
     }
 
     @Override
     public String toString() {
         return "Vehiculo{" +
-                "Placa='" + Placa + '\'' +
-                ", Marca='" + Marca + '\'' +
-                ", Modelo='" + Modelo + '\'' +
-                ", Anyo='" + Anyo + '\'' +
-                ", PrecioBase='" + PrecioBase + '\'' +
+                "placa='" + placa + '\'' +
+                ", marca='" + marca + '\'' +
+                ", modelo='" + modelo + '\'' +
+                ", anio=" + anio +
+                ", precioBase=" + precioBase +
                 '}';
     }
 }
