@@ -26,7 +26,8 @@ public class Automovil extends Vehiculo {
 
     @Override
     public double calcularPrecioFinal() {
-        System.out.println("Este metodo es para calcular el precio final del automovil");
+        System.out.println("se calculara el precio final del automovil");
+
         return 0;
     }
 }
