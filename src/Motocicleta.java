@@ -16,6 +16,7 @@ public class Motocicleta extends Vehiculo{
 
     @Override
     public double calcularPrecioFinal() {
+        System.out.println("se calculara el precio final del automovil");
         return 0;
     }
 }
