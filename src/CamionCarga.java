@@ -16,7 +16,9 @@ public class CamionCarga extends Vehiculo{
 
     @Override
     public double calcularPrecioFinal() {
+        System.out.println("Este metodo es para calcular el precio final del camion de carga");
+        return 0;
+    }
 
-        System.out.println("se calculara el precio final del automovil");
-        return 0;}
+
 }
